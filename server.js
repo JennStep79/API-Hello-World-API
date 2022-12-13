@@ -18,8 +18,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Hello World! API')
 })
 
-// Languages: 
-const languagesController = require('./controllers/languages_controller.js')
+const languagesController = require('./controllers/languages_controller')
 app.use('/languages', languagesController)
 
 // LISTEN
